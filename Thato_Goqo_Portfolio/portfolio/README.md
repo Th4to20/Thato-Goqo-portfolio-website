@@ -2,8 +2,6 @@
 
 Personal portfolio site for Thato Goqo — a 3rd-year Bachelor of Computing student and freelance web developer running **TK Digital Studio**. Built from scratch with vanilla HTML, CSS and JavaScript (no frameworks).
 
-**Live site:** _add your GitHub Pages / hosting link here_
-
 ## Pages
 
 - `index.html` — Landing page / intro

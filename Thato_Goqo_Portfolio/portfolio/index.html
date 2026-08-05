@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thato Goqo — Software Engineer & Web Developer</title>
+  <meta name="description" content="Portfolio of Thato Goqo, a 3rd-year Bachelor of Computing student and freelance web developer running TK Digital Studio.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== Page loader ===== -->
+  <div class="page-loader" id="page-loader">
+    <div class="loader-mark">
+      <span class="loader-ring"></span>
+      <span class="loader-label"></span>
+    </div>
+  </div>
+
+
+  <!-- ===== Nav ===== -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">~/<span>thato</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="assets/Thato_Goqo_CV.pdf" class="btn btn-primary btn-small" download>Download CV</a>
+        <button class="nav-toggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== Hero ===== -->
+  <header class="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="container">
+      <div class="hero-text">
+        <div class="profile-photo">
+          <img src="assets/profile.jpg" alt="Thato Goqo">
+        </div>
+        <span class="hero-eyebrow">welcome</span>
+        <h1>Hi, I'm <span class="highlight">Thato Goqo</span>.</h1>
+        <p class="hero-subtitle">
+          Bridging complex software engineering with striking visual design —
+          a 3rd-year IT student building real tools and real client websites.
+        </p>
+        <div class="hero-actions">
+          <a href="projects.html" class="btn btn-primary">View My Work</a>
+          <a href="https://github.com/" target="_blank" rel="noopener" class="btn btn-ghost">Visit GitHub</a>
+        </div>
+      </div>
+
+      <div class="terminal">
+        <div class="terminal-header">
+          <span class="terminal-dot red"></span>
+          <span class="terminal-dot yellow"></span>
+          <span class="terminal-dot green"></span>
+          <span class="terminal-title">thato@dev-machine — zsh</span>
+        </div>
+        <div class="terminal-body"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Quick about ===== -->
+  <section id="about-teaser">
+    <div class="container">
+      <span class="section-label">about</span>
+      <h2 class="reveal">Software engineering background, developer's toolkit.</h2>
+      <p class="section-intro reveal">
+        3rd-year Computing student at Belgium Campus ITversity. On the side, I run TK Digital
+        Studio — building responsive multi-page sites for local businesses.
+      </p>
+      <a href="about.html" class="btn btn-ghost reveal">Read more →</a>
+    </div>
+  </section>
+
+  <!-- ===== Skills teaser ===== -->
+  <section id="skills-teaser">
+    <div class="container">
+      <span class="section-label">skills</span>
+      <h2 class="reveal">What I work with</h2>
+      <p class="section-intro reveal">A mix of core software engineering and modern web tooling.</p>
+      <div class="tag-list reveal">
+        <span class="tag">C#</span>
+        <span class="tag">Java</span>
+        <span class="tag">Python</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Node.js</span>
+        <span class="tag">PostgreSQL</span>
+        <span class="tag">MongoDB</span>
+        <span class="tag">Git</span>
+        <span class="tag">REST APIs</span>
+      </div>
+      <a href="skills.html" class="btn btn-ghost reveal" style="margin-top: 28px; display: inline-block;">See full skill set →</a>
+    </div>
+  </section>
+
+  <!-- ===== Featured project ===== -->
+  <section id="project-teaser">
+    <div class="container">
+      <span class="section-label">projects</span>
+      <h2 class="reveal">A few things I've built</h2>
+      <div class="project-grid reveal">
+        <div class="project-card">
+          <span class="project-tag-row">Freelance</span>
+          <h3>TK Digital Studio</h3>
+          <p>Responsive multi-page client sites across medical, hospitality, construction and beauty industries.</p>
+          <div class="tag-list">
+            <span class="tag">HTML/CSS/JS</span>
+            <span class="tag">JSON-LD</span>
+            <span class="tag">Dark mode</span>
+          </div>
+        </div>
+        <div class="project-card">
+          <span class="project-tag-row">Group project</span>
+          <h3>EventHub</h3>
+          <p>Front-end for an event management platform built with Node.js, Express, MongoDB and EJS.</p>
+          <div class="tag-list">
+            <span class="tag">Node.js</span>
+            <span class="tag">Express</span>
+            <span class="tag">MongoDB</span>
+          </div>
+        </div>
+      </div>
+      <a href="projects.html" class="btn btn-ghost reveal" style="margin-top: 28px; display: inline-block;">See all projects →</a>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Thato Goqo. Built with vanilla HTML, CSS &amp; JS.</p>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/thato-goqo-8328b3425" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:goqothato@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ===== WhatsApp floating button ===== -->
+  <a
+    href="https://wa.me/27812182846?text=Hi%20Thato%2C%20I%20saw%20your%20portfolio%20and%20wanted%20to%20chat."
+    class="whatsapp-fab"
+    target="_blank"
+    rel="noopener"
+    aria-label="Chat with Thato on WhatsApp"
+  >
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m0 1.67c2.2 0 4.26.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.8c0 4.54-3.7 8.23-8.24 8.23a8.24 8.24 0 0 1-4.19-1.15l-.3-.17-3.12.82.83-3.04-.2-.32a8.13 8.13 0 0 1-1.25-4.34c0-4.54 3.7-8.25 8.24-8.25M8.53 6.85c-.16 0-.43.06-.65.3-.23.25-.85.83-.85 2.01 0 1.18.87 2.34 1 2.49.12.15 1.69 2.67 4.16 3.66 2.05.82 2.47.66 2.92.62.45-.04 1.42-.57 1.62-1.12.2-.55.2-1.02.14-1.12-.06-.1-.22-.16-.46-.28-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.25-.61.78-.75.94-.14.16-.28.18-.52.06-.24-.12-1.02-.37-1.94-1.19-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.02-.37.1-.49.11-.11.24-.29.36-.43.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.31-.76-1.8-.18-.41-.36-.41-.54-.42-.16-.01-.34-.08-.53-.08"/>
+    </svg>
+  </a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

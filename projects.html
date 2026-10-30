@@ -1,165 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects — Thato Goqo</title>
-  <meta name="description" content="Projects built by Thato Goqo — TK Digital Studio client sites, ABM.NET framework, EventHub and more.">
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects | Thato Goqo</title>
+<meta name="description" content="Projects by Thato Goqo: ABM.NET agent-based modelling framework, CivicConnect, TK Digital Studio client websites, EventHub and a Java Swing inventory system.">
+<meta property="og:title" content="Projects | Thato Goqo">
+<meta property="og:description" content="Projects by Thato Goqo: ABM.NET agent-based modelling framework, CivicConnect, TK Digital Studio client websites, EventHub and a Java Swing inventory system.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0b0a14">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='15' cy='15' r='13' fill='%23a78bfa'/%3E%3Ccircle cx='25' cy='25' r='6' fill='%23ff6b9d' stroke='%230b0a14' stroke-width='2'/%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('theme');if(!t)t='dark';document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&display=swap">
+<link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-
-  <!-- ===== Page loader ===== -->
-  <div class="page-loader" id="page-loader">
-    <div class="loader-mark">
-      <span class="loader-ring"></span>
-      <span class="loader-label"></span>
-    </div>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img class="brand-img" src="assets/profile.jpg" alt="" width="36" height="36">Thato Goqo</a>
+    <ul class="nav-links" id="nav-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="skills.html">Skills</a></li><li><a href="projects.html" aria-current="page">Projects</a></li><li><a href="contact.html">Contact</a></li></ul>
+    <button class="icon-btn theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme"><svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+    <span class="nav-cta"><a class="btn btn-solid btn-small" href="assets/Thato_Goqo_CV.pdf" download>Download CV</a></span>
+    <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   </div>
-
-
-  <!-- ===== Nav ===== -->
-  <nav class="navbar">
-    <div class="container">
-      <a href="index.html" class="logo">~/<span>thato</span></a>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <div class="nav-cta">
-        <a href="assets/Thato_Goqo_CV.pdf" class="btn btn-primary btn-small" download>Download CV</a>
-        <button class="nav-toggle" aria-label="Toggle menu">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
+</header>
+<main id="main">
+<section class="page-hero"><div class="wrap">
+    <h1>Things I've built and shipped</h1>
+    <p class="lede">Team projects from university, plus websites for businesses through TK Digital Studio. The home page has a small interactive version of the ABM.NET comparison tool.</p>
+  </div></section>
+  <section class="section"><div class="wrap">
+    <article class="proj lead p-violet">
+  <div class="proj-meta"><b>Final-year group project, PRJ381</b>Belgium Campus iTversity<br>Team of 7, 2026 to present</div>
+  <div>
+    <h3>ABM.NET Framework</h3>
+    <p>A distributed agent-based modelling system in C#/.NET 8. I planned the work for the whole team, then built the scenario setup and the tools researchers use to compare many runs.</p>
+    <ul>
+      <li><strong>Planning and leadership.</strong> Directed the work breakdown structure: split the architecture into task packages, estimated durations, and assigned backend, frontend and DevOps roles.</li>
+      <li><strong>Configuration module.</strong> Parses JSON and YAML scenario files into a validated <code>SimulationConfig</code> object for the core engine. It reports every configuration error in one pass, and its public interface let teammates on agent logic and persistence work independently.</li>
+      <li><strong>Batch experiments (Compare).</strong> A Monte Carlo runner that executes up to 100 simulation runs in the background, each with its own random seed.</li>
+      <li><strong>Aggregation.</strong> Calculates the average, lowest, highest and standard deviation across runs for each key outcome.</li>
+      <li><strong>Charts and export.</strong> Chart.js plots of the average trajectory with a shaded spread band, plus one-click CSV export.</li>
+    </ul>
+    <ul class="chips"><li>C#</li><li>.NET 8</li><li>JSON / YAML</li><li>xUnit</li><li>Chart.js</li><li>Monte Carlo</li></ul>
+  </div>
+</article>
+    <article class="proj p-mint">
+  <div class="proj-meta"><b>Group project, SEN381</b>Belgium Campus iTversity<br>Team of 2, 2026</div>
+  <div>
+    <h3>CivicConnect</h3>
+    <p>A municipal issue reporting web application, built with a peer collaborator.</p>
+    <ul>
+      <li>Co-developed the application end to end with one teammate.</li>
+      <li>Managed the deployment pipeline and hosted the live production application on Render.</li>
+      <li>Finalised the release candidate and co-presented the final project defence in October 2026.</li>
+    </ul>
+    <ul class="chips"><li>Node.js</li><li>Express</li><li>PostgreSQL</li><li>Render</li></ul>
+  </div>
+</article>
+    <article class="proj p-amber">
+  <div class="proj-meta"><b>Co-founder, TK Digital Studio</b>Web design agency, Gauteng<br>With Oarabeng Khunou, 2025 to present</div>
+  <div>
+    <h3>TK Digital Studio</h3>
+    <p>We design and build custom, responsive, multi-page websites for local businesses in medical, hospitality, construction and beauty, including Dr Andie Family Practice, Mpudulle Eye Centre, Julia Mathabathe (Clinical Psychologist), Wonderboom Car Service and Filadelfia Secondary LSEN School.</p>
+    <ul>
+      <li>Real-time open and closed indicators, WhatsApp integration, JSON-LD structured data for search, dark mode, and Three.js 3D effects.</li>
+      <li>Full workflow from concept and layout to development and client-style presentation, including turning physical business information into clean digital content.</li>
+    </ul>
+    <div class="demo-links">
+      <a href="https://drlecheko.netlify.app" target="_blank" rel="noopener">Dr Lecheko GP Practice<span class="sr"> (opens in new tab)</span></a>
+      <a href="https://juliamathabathe.netlify.app" target="_blank" rel="noopener">Julia Mathabathe<span class="sr"> (opens in new tab)</span></a>
+      <a href="https://tkdigitalstudio.netlify.app" target="_blank" rel="noopener">TK Digital Studio site<span class="sr"> (opens in new tab)</span></a>
     </div>
-  </nav>
+    <p class="fine">The client sites are self-initiated practice builds, hosted as live demos. They are not commissioned or run by the businesses shown.</p>
+    <ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>JSON-LD</li><li>Three.js</li></ul>
+  </div>
+</article>
+    <article class="proj p-pink">
+  <div class="proj-meta"><b>Group project, WPR381</b>Belgium Campus iTversity<br>2026</div>
+  <div>
+    <h3>EventHub</h3>
+    <p>An event management platform. I delivered the front-end with Node.js, Express, MongoDB and EJS, found and fixed integration bugs in a teammate's backend code, and prepared the full project presentation.</p>
+    <ul class="chips"><li>Node.js</li><li>Express</li><li>MongoDB</li><li>EJS</li></ul>
+  </div>
+</article>
+    <article class="proj p-sky">
+  <div class="proj-meta"><b>Group project, Programming 381</b>Belgium Campus iTversity<br>Team of 2, 2026</div>
+  <div>
+    <h3>University Cleaning Inventory and Issuance System</h3>
+    <p>A Java Swing desktop application. I built the core application logic and the PostgreSQL/JDBC data layer, set up the IntelliJ IDEA project for the team, and wrote the technical documentation and the narration script for the video presentation.</p>
+    <ul class="chips"><li>Java Swing</li><li>PostgreSQL</li><li>JDBC</li><li>IntelliJ IDEA</li></ul>
+  </div>
+</article>
+  </div></section>
+  <section class="closer">
+  <div class="wrap">
+    <p>Open to internships, freelance web projects and engineering work with a design eye.</p>
+    <a class="big" href="mailto:goqothato@gmail.com">goqothato@gmail.com</a>
+  </div>
+</section>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <span>&copy; <span id="year">2026</span> Thato Goqo. Built by hand with HTML, CSS and JavaScript.</span>
+    <nav aria-label="Footer"><a href="about.html">About</a><a href="skills.html">Skills</a><a href="projects.html">Projects</a><a href="contact.html">Contact</a><a href="https://github.com/Th4to20" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/thato-goqo-8328b3425" target="_blank" rel="noopener">LinkedIn</a></nav>
+  </div>
+</footer>
+<a class="wa" href="https://wa.me/27812182846?text=Hi%20Thato%2C%20I%20saw%20your%20portfolio%20and%20wanted%20to%20chat." target="_blank" rel="noopener" aria-label="Chat with Thato on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m0 1.67c2.2 0 4.26.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.8c0 4.54-3.7 8.23-8.24 8.23a8.24 8.24 0 0 1-4.19-1.15l-.3-.17-3.12.82.83-3.04-.2-.32a8.13 8.13 0 0 1-1.25-4.34c0-4.54 3.7-8.25 8.24-8.25M8.53 6.85c-.16 0-.43.06-.65.3-.23.25-.85.83-.85 2.01 0 1.18.87 2.34 1 2.49.12.15 1.69 2.67 4.16 3.66 2.05.82 2.47.66 2.92.62.45-.04 1.42-.57 1.62-1.12.2-.55.2-1.02.14-1.12-.06-.1-.22-.16-.46-.28-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.25-.61.78-.75.94-.14.16-.28.18-.52.06-.24-.12-1.02-.37-1.94-1.19-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.02-.37.1-.49.11-.11.24-.29.36-.43.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.31-.76-1.8-.18-.41-.36-.41-.54-.42-.16-.01-.34-.08-.53-.08"/></svg></a>
+<script src="js/main.js"></script>
 
-  <header class="page-hero">
-    <div class="container">
-      <span class="section-label">projects</span>
-      <h1>Things I've built and shipped</h1>
-    </div>
-  </header>
-
-  <section id="projects-main">
-    <div class="container">
-      <div class="project-grid">
-
-        <div class="project-card project-featured reveal">
-          <span class="project-tag-row">Freelance — 2025 to present</span>
-          <h3>TK Digital Studio</h3>
-          <p>
-            Independently designed and built responsive, multi-page demo websites for real businesses
-            across medical, hospitality, construction and beauty industries — including Dr Andie Family
-            Practice, Mpudulle Eye Centre, Julia Mathabathe (Clinical Psychologist), Wonderboom Car
-            Service, and Filadelfia Secondary LSEN School. Implemented real-time open/closed indicators,
-            WhatsApp integration, JSON-LD structured data for SEO, dark mode and Three.js 3D effects.
-          </p>
-          <div class="tag-list">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">JSON-LD</span>
-            <span class="tag">Three.js</span>
-          </div>
-
-          <div class="demo-links">
-            <a href="https://drlecheko.netlify.app" target="_blank" rel="noopener" class="demo-link">
-              Dr Lecheko GP Practice <span class="demo-link-arrow">↗</span>
-            </a>
-            <a href="https://juliamathabathe.netlify.app" target="_blank" rel="noopener" class="demo-link">
-              Julia Mathabathe <span class="demo-link-arrow">↗</span>
-            </a>
-            <a href="https://tkdigitalstudio.netlify.app" target="_blank" rel="noopener" class="demo-link">
-              TK Digital Studio <span class="demo-link-arrow">↗</span>
-            </a>
-          </div>
-          <p class="demo-disclaimer">
-            These are self-initiated practice builds made to sharpen my skills and grow my portfolio —
-            they're hosted as live demos, but they aren't commissioned, production sites run by these
-            businesses.
-          </p>
-        </div>
-
-        <div class="project-card reveal">
-          <span class="project-tag-row">Group project — PRJ381 · 2026</span>
-          <h3>Config &amp; Scenario Setup Module</h3>
-          <p>
-            Built the configuration module for a distributed Agent-Based Modelling framework in C#/.NET 8,
-            parsing JSON/YAML scenario files into a validated <code>SimulationConfig</code> object. Implemented
-            validation logic that surfaces every error in one pass, plus a CLI demo app and xUnit test suite.
-          </p>
-          <div class="tag-list">
-            <span class="tag">C#</span>
-            <span class="tag">.NET 8</span>
-            <span class="tag">xUnit</span>
-          </div>
-        </div>
-
-        <div class="project-card reveal">
-          <span class="project-tag-row">Group project — WPR381 · 2026</span>
-          <h3>EventHub</h3>
-          <p>
-            Delivered the front-end for an event management platform using Node.js, Express, MongoDB
-            and EJS. Identified and resolved integration bugs in a teammate's backend code, and prepared
-            the full project presentation.
-          </p>
-          <div class="tag-list">
-            <span class="tag">Node.js</span>
-            <span class="tag">Express</span>
-            <span class="tag">MongoDB</span>
-            <span class="tag">EJS</span>
-          </div>
-        </div>
-
-        <div class="project-card reveal">
-          <span class="project-tag-row">Group project — Programming 381 · 2026</span>
-          <h3>University Cleaning Inventory &amp; Issuance System</h3>
-          <p>
-            A Java Swing desktop application built with a two-person team. Built the core application
-            logic and the PostgreSQL/JDBC data layer, set up the IntelliJ IDEA project environment,
-            and produced technical documentation and a narration script for the video presentation.
-          </p>
-          <div class="tag-list">
-            <span class="tag">Java Swing</span>
-            <span class="tag">PostgreSQL</span>
-            <span class="tag">JDBC</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container footer-inner">
-      <p>&copy; <span id="year"></span> Thato Goqo. Built with vanilla HTML, CSS &amp; JS.</p>
-      <div class="footer-social">
-        <a href="https://www.linkedin.com/in/thato-goqo-8328b3425" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
-        <a href="mailto:goqothato@gmail.com">Email</a>
-      </div>
-    </div>
-  </footer>
-
-
-  <!-- ===== WhatsApp floating button ===== -->
-  <a
-    href="https://wa.me/27812182846?text=Hi%20Thato%2C%20I%20saw%20your%20portfolio%20and%20wanted%20to%20chat."
-    class="whatsapp-fab"
-    target="_blank"
-    rel="noopener"
-    aria-label="Chat with Thato on WhatsApp"
-  >
-    <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m0 1.67c2.2 0 4.26.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.8c0 4.54-3.7 8.23-8.24 8.23a8.24 8.24 0 0 1-4.19-1.15l-.3-.17-3.12.82.83-3.04-.2-.32a8.13 8.13 0 0 1-1.25-4.34c0-4.54 3.7-8.25 8.24-8.25M8.53 6.85c-.16 0-.43.06-.65.3-.23.25-.85.83-.85 2.01 0 1.18.87 2.34 1 2.49.12.15 1.69 2.67 4.16 3.66 2.05.82 2.47.66 2.92.62.45-.04 1.42-.57 1.62-1.12.2-.55.2-1.02.14-1.12-.06-.1-.22-.16-.46-.28-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.25-.61.78-.75.94-.14.16-.28.18-.52.06-.24-.12-1.02-.37-1.94-1.19-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.02-.37.1-.49.11-.11.24-.29.36-.43.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.31-.76-1.8-.18-.41-.36-.41-.54-.42-.16-.01-.34-.08-.53-.08"/>
-    </svg>
-  </a>
-
-  <script src="js/main.js"></script>
 </body>
 </html>

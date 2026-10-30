@@ -1,143 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Skills — Thato Goqo</title>
-  <meta name="description" content="Technical skills of Thato Goqo across software engineering, web development, databases and tools.">
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skills | Thato Goqo</title>
+<meta name="description" content="Skills of Thato Goqo, grouped by what he has built with them: C#, Java, JavaScript, Node.js, PostgreSQL, MongoDB, Chart.js and more.">
+<meta property="og:title" content="Skills | Thato Goqo">
+<meta property="og:description" content="Skills of Thato Goqo, grouped by what he has built with them: C#, Java, JavaScript, Node.js, PostgreSQL, MongoDB, Chart.js and more.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0b0a14">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='15' cy='15' r='13' fill='%23a78bfa'/%3E%3Ccircle cx='25' cy='25' r='6' fill='%23ff6b9d' stroke='%230b0a14' stroke-width='2'/%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('theme');if(!t)t='dark';document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&display=swap">
+<link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-
-  <!-- ===== Page loader ===== -->
-  <div class="page-loader" id="page-loader">
-    <div class="loader-mark">
-      <span class="loader-ring"></span>
-      <span class="loader-label"></span>
-    </div>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img class="brand-img" src="assets/profile.jpg" alt="" width="36" height="36">Thato Goqo</a>
+    <ul class="nav-links" id="nav-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="skills.html" aria-current="page">Skills</a></li><li><a href="projects.html">Projects</a></li><li><a href="contact.html">Contact</a></li></ul>
+    <button class="icon-btn theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme"><svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+    <span class="nav-cta"><a class="btn btn-solid btn-small" href="assets/Thato_Goqo_CV.pdf" download>Download CV</a></span>
+    <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   </div>
+</header>
+<main id="main">
+<section class="page-hero"><div class="wrap">
+    <h1>Tools I build with, and where I've used them</h1>
+    <p class="lede">Every skill here is tied to something I actually made.</p>
+  </div></section>
+  <section class="section"><div class="wrap"><div class="skill-row p-violet"><h3>Languages</h3><div><ul class="skill-list"><li><b>C#</b><span>ABM.NET configuration module, validation and xUnit tests</span></li><li><b>Java</b><span>University Cleaning Inventory and Issuance System, a Swing desktop app</span></li><li><b>Python</b><span>General-purpose programming alongside C# and Java</span></li><li><b>JavaScript</b><span>Client websites, EventHub, CivicConnect and the home page sandbox</span></li></ul><p class="fine" style="margin:18px 0 0">Also working with SQL and object-oriented design.</p></div></div><div class="skill-row p-pink"><h3>Web development</h3><div><ul class="skill-list"><li><b>HTML, CSS and responsive design</b><span>Multi-page sites for TK Digital Studio clients</span></li><li><b>Node.js and Express</b><span>EventHub and CivicConnect</span></li><li><b>EJS</b><span>Server-rendered views in EventHub</span></li><li><b>Chart.js</b><span>Average and spread charts in the ABM.NET Compare dashboard</span></li><li><b>Three.js</b><span>3D effects on client websites</span></li><li><b>PWA setup</b><span>Installable web app setup on client builds</span></li><li><b>SEO and JSON-LD</b><span>Structured data for search on client sites and this portfolio</span></li><li><b>Dark mode</b><span>Client sites and this portfolio</span></li><li><b>Live features</b><span>Real-time open and closed indicators and WhatsApp integration on client sites</span></li></ul></div></div><div class="skill-row p-sky"><h3>Backend and databases</h3><div><ul class="skill-list"><li><b>PostgreSQL and JDBC</b><span>Data layer for the Cleaning Inventory system</span></li><li><b>MongoDB</b><span>EventHub</span></li><li><b>.NET 8</b><span>ABM.NET, parsing JSON and YAML scenario files into validated config</span></li><li><b>Monte Carlo batch runs</b><span>ABM.NET Compare feature with seeded, concurrent runs</span></li></ul></div></div><div class="skill-row p-amber"><h3>Tools and deployment</h3><div><ul class="skill-list"><li><b>Git</b><span>Every team project</span></li><li><b>IntelliJ IDEA</b><span>Java work, including setting up the project for the team</span></li><li><b>Visual Studio</b><span>C# and .NET work</span></li><li><b>xUnit</b><span>Test suite for the configuration module</span></li><li><b>Render</b><span>Hosting the live CivicConnect application</span></li><li><b>Claude and Gemini</b><span>Daily use for development and research</span></li></ul></div></div><div class="skill-row p-mint"><h3>Planning and teamwork</h3><div><ul class="skill-list"><li><b>Work breakdown and estimates</b><span>Planned the ABM.NET build for a team of 7</span></li><li><b>Clear hand-offs</b><span>Defined the config module interface so others could build against it</span></li><li><b>Presenting</b><span>EventHub presentation and the CivicConnect final defence</span></li></ul></div></div><div class="skill-row p-pink"><h3>Working style</h3><div><ul class="skill-list"><li><b>Problem-solving</b><span>Found and fixed integration bugs in a teammate's EventHub backend</span></li><li><b>Attention to detail</b><span>Config validation that reports every error in one pass</span></li><li><b>Self-directed learning</b><span>Built TK Digital Studio demo sites on my own to grow my skills</span></li><li><b>Teamwork and communication</b><span>Teams of 2 to 7 across five projects</span></li></ul></div></div><div class="skill-row p-violet"><h3>Design</h3><div><ul class="skill-list"><li><b>UI and visual design</b><span>Layouts for every client site</span></li><li><b>Digital illustration</b><span>The habit behind how I judge spacing, colour and detail</span></li></ul></div></div></div></section>
+  <section class="closer">
+  <div class="wrap">
+    <p>Open to internships, freelance web projects and engineering work with a design eye.</p>
+    <a class="big" href="mailto:goqothato@gmail.com">goqothato@gmail.com</a>
+  </div>
+</section>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <span>&copy; <span id="year">2026</span> Thato Goqo. Built by hand with HTML, CSS and JavaScript.</span>
+    <nav aria-label="Footer"><a href="about.html">About</a><a href="skills.html">Skills</a><a href="projects.html">Projects</a><a href="contact.html">Contact</a><a href="https://github.com/Th4to20" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/thato-goqo-8328b3425" target="_blank" rel="noopener">LinkedIn</a></nav>
+  </div>
+</footer>
+<a class="wa" href="https://wa.me/27812182846?text=Hi%20Thato%2C%20I%20saw%20your%20portfolio%20and%20wanted%20to%20chat." target="_blank" rel="noopener" aria-label="Chat with Thato on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m0 1.67c2.2 0 4.26.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.8c0 4.54-3.7 8.23-8.24 8.23a8.24 8.24 0 0 1-4.19-1.15l-.3-.17-3.12.82.83-3.04-.2-.32a8.13 8.13 0 0 1-1.25-4.34c0-4.54 3.7-8.25 8.24-8.25M8.53 6.85c-.16 0-.43.06-.65.3-.23.25-.85.83-.85 2.01 0 1.18.87 2.34 1 2.49.12.15 1.69 2.67 4.16 3.66 2.05.82 2.47.66 2.92.62.45-.04 1.42-.57 1.62-1.12.2-.55.2-1.02.14-1.12-.06-.1-.22-.16-.46-.28-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.25-.61.78-.75.94-.14.16-.28.18-.52.06-.24-.12-1.02-.37-1.94-1.19-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.02-.37.1-.49.11-.11.24-.29.36-.43.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.31-.76-1.8-.18-.41-.36-.41-.54-.42-.16-.01-.34-.08-.53-.08"/></svg></a>
+<script src="js/main.js"></script>
 
-
-  <!-- ===== Nav ===== -->
-  <nav class="navbar">
-    <div class="container">
-      <a href="index.html" class="logo">~/<span>thato</span></a>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <div class="nav-cta">
-        <a href="assets/Thato_Goqo_CV.pdf" class="btn btn-primary btn-small" download>Download CV</a>
-        <button class="nav-toggle" aria-label="Toggle menu">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
-  </nav>
-
-  <header class="page-hero">
-    <div class="container">
-      <span class="section-label">skills</span>
-      <h1>Tools I build with</h1>
-    </div>
-  </header>
-
-  <section id="skills-main">
-    <div class="container">
-      <div class="skills-grid">
-        <div class="skill-card reveal">
-          <h3>Software Engineering</h3>
-          <div class="tag-list">
-            <span class="tag">C#</span>
-            <span class="tag">Java</span>
-            <span class="tag">Python</span>
-            <span class="tag">OOP</span>
-          </div>
-        </div>
-
-        <div class="skill-card reveal">
-          <h3>Web Development</h3>
-          <div class="tag-list">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">Node.js</span>
-            <span class="tag">Express</span>
-            <span class="tag">Three.js</span>
-          </div>
-        </div>
-
-        <div class="skill-card reveal">
-          <h3>Databases</h3>
-          <div class="tag-list">
-            <span class="tag">PostgreSQL</span>
-            <span class="tag">MongoDB</span>
-            <span class="tag">SQL</span>
-            <span class="tag">JDBC</span>
-          </div>
-        </div>
-
-        <div class="skill-card reveal">
-          <h3>Tools &amp; Architecture</h3>
-          <div class="tag-list">
-            <span class="tag">Git</span>
-            <span class="tag">RESTful APIs</span>
-            <span class="tag">System Architecture</span>
-            <span class="tag">UI/UX Design</span>
-          </div>
-        </div>
-
-        <div class="skill-card reveal">
-          <h3>Front-end Enhancements</h3>
-          <div class="tag-list">
-            <span class="tag">Three.js effects</span>
-            <span class="tag">PWA setup</span>
-            <span class="tag">SEO / JSON-LD</span>
-            <span class="tag">Dark mode</span>
-          </div>
-        </div>
-
-        <div class="skill-card reveal">
-          <h3>Working Tools</h3>
-          <div class="tag-list">
-            <span class="tag">IntelliJ IDEA</span>
-            <span class="tag">Visual Studio</span>
-            <span class="tag">xUnit</span>
-            <span class="tag">Claude &amp; Gemini</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container footer-inner">
-      <p>&copy; <span id="year"></span> Thato Goqo. Built with vanilla HTML, CSS &amp; JS.</p>
-      <div class="footer-social">
-        <a href="https://www.linkedin.com/in/thato-goqo-8328b3425" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
-        <a href="mailto:goqothato@gmail.com">Email</a>
-      </div>
-    </div>
-  </footer>
-
-
-  <!-- ===== WhatsApp floating button ===== -->
-  <a
-    href="https://wa.me/27812182846?text=Hi%20Thato%2C%20I%20saw%20your%20portfolio%20and%20wanted%20to%20chat."
-    class="whatsapp-fab"
-    target="_blank"
-    rel="noopener"
-    aria-label="Chat with Thato on WhatsApp"
-  >
-    <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m0 1.67c2.2 0 4.26.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.8c0 4.54-3.7 8.23-8.24 8.23a8.24 8.24 0 0 1-4.19-1.15l-.3-.17-3.12.82.83-3.04-.2-.32a8.13 8.13 0 0 1-1.25-4.34c0-4.54 3.7-8.25 8.24-8.25M8.53 6.85c-.16 0-.43.06-.65.3-.23.25-.85.83-.85 2.01 0 1.18.87 2.34 1 2.49.12.15 1.69 2.67 4.16 3.66 2.05.82 2.47.66 2.92.62.45-.04 1.42-.57 1.62-1.12.2-.55.2-1.02.14-1.12-.06-.1-.22-.16-.46-.28-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.25-.61.78-.75.94-.14.16-.28.18-.52.06-.24-.12-1.02-.37-1.94-1.19-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.02-.37.1-.49.11-.11.24-.29.36-.43.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.31-.76-1.8-.18-.41-.36-.41-.54-.42-.16-.01-.34-.08-.53-.08"/>
-    </svg>
-  </a>
-
-  <script src="js/main.js"></script>
 </body>
 </html>
